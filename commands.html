@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta content="text/html" charset="UTF-8" http-equiv="content-type"/>
+	<link rel="stylesheet" type="text/css" href="CSS/projecte.css" />
+	<title>Projecte</title>
+</head>
+<body>
+    <div id="capcalera">
+		<h3>projecte</h3>
+		<ul>
+			<li><a href="clientprincipal.html">MAIN</a></li>
+			<li><a href="catalog.html">CATALOG</a></li>
+			<li><a href="commands.html">ORDERS</a></li>
+			<li><a href="logout.php"><img src="IMATGES/sortida.png" class="icona"/></a></li>
+		</ul>
+    </div>
+    <div class="contingut_esquerre">
+        <form class="formulari" action="http://localhost/daw2_m07uf1_projecte_grup09/accions/afegircomanda.php" method="POST">
+            <h1>ADD ORDER</h1>
+            <label for="form_name">Name product:</label>
+            <input maxlength="100" name="form_name"  type="text"/><br/>
+            <input class="form_buttom" type="submit" value="SEND"/>
+            <input class="form_buttom" type="reset" value="REMOVE"/>
+        </form>
+    </div>
+    <div class="contingut_dret">
+        <h1>VIEW ORDER LIST</h1>
+        <a class="a_button" href="accions/visualitzarllistacomandes.php">VIEW ORDER list</a>
+    </div>
+    <div class="contingut_esquerre">
+    <form class="formulari" action="http://localhost/daw2_m07uf1_projecte_grup09/peticionsClient/modificaComanda.php" method="POST">
+        <h1>ORDER MODIFIED</h1>
+        <label for="form_numcommand">Order Number:</label>
+        <input name="form_numcommand"  type="number"/><br/>
+        <label for="form_changeproduct">Change product:</label>
+        <input maxlength="100" name="form_changeproduct"  type="text"/><br/>
+        <input class="form_buttom" type="submit" value="SEND"/>
+        <input class="form_buttom" type="reset" value="REMOVE"/>
+    </form>
+    </div>
+    <div class="contingut_dret">
+        <form class="formulari" action="http://localhost/daw2_m07uf1_projecte_grup09/peticionsClient/eliminaComanda.php" method="POST">
+            <h1>ORDER DELETE </h1>
+            <label for="form_numcommand">Order Number:</label>
+            <input name="form_numcommand"  type="number"/><br/>
+            <input class="form_buttom" type="submit" value="SEND"/>
+            <input class="form_buttom" type="reset" value="REMOVE"/>
+        </form>
+    </div>
+	<div id="peudepagina">
+		<p>© projecte</p>
+	</div>
+</body>
+</html>
